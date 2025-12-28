@@ -1,0 +1,21 @@
+{
+  "id": "google-ai-studio",
+  "name": "Google AI Studio",
+  "type": "tool",
+  "layer": "Orchestration",
+  "status": "Active",
+  "accessTier": ["Free", "Pro"],
+  "summary": "Google AI Studio is a lightweight web-based environment for experimenting with Gemini models and prototyping AI applications.",
+  "whyItMatters": "AI Studio lowers the barrier to entry for working with frontier models. It allows rapid experimentation without deployment complexity, making it ideal for learning, testing, and early-stage development.",
+  "toolType": "Prototyping Environment",
+  "agenticLevel": "Low",
+  "poweredBy": ["gemini-3-pro", "gemini-3-flash"],
+  "targetUser": ["Developers", "Students", "Researchers"],
+  "approvalRequired": "No",
+  "outputType": ["Prompts", "API Tests"],
+  "relationships": {
+    "relatedModels": ["gemini-3-pro"],
+    "relatedTools": ["vertex-ai"]
+  },
+  "lastUpdated": "2025-11-20"
+}

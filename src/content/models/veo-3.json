@@ -1,0 +1,32 @@
+{
+  "id": "veo-3",
+  "name": "Veo 3",
+  "type": "model",
+  "layer": "Foundation",
+  "status": "Active",
+  "accessTier": ["Ultra", "Enterprise"],
+  "summary": "Veo 3 is Google’s advanced video generation model, designed to create high-fidelity, cinematic-quality video from text, images, and frames.",
+  "whyItMatters": "Veo 3 moves generative AI beyond short clips into controllable, narrative video creation. It enables filmmakers, creators, and enterprises to prototype and produce visual stories with unprecedented speed and creative control.",
+  "capabilities": [
+    "High-quality text-to-video generation",
+    "Frame-to-video and image-conditioned video",
+    "Cinematic motion and lighting control",
+    "Consistent visual style across scenes"
+  ],
+  "reasoningLevel": "Specialized",
+  "contextWindow": "Multi-frame temporal context",
+  "modalities": ["Text", "Image", "Video"],
+  "typicalUseCases": [
+    "AI-assisted filmmaking",
+    "Marketing and promotional video creation",
+    "Storyboarding and pre-visualization",
+    "Creative experimentation"
+  ],
+  "relationships": {
+    "evolvesFrom": ["veo-2"],
+    "powers": ["flow"],
+    "usedBy": ["creative-tools"],
+    "related": ["nano-banana-pro"]
+  },
+  "lastUpdated": "2025-11-20"
+}

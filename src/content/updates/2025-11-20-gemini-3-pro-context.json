@@ -1,0 +1,10 @@
+{
+  "id": "update-2025-11-20-gemini-3-pro-context",
+  "date": "2025-11-20",
+  "changeType": "Capability Expansion",
+  "title": "Gemini 3 Pro expanded long-context reasoning",
+  "whatChanged": "Gemini 3 Pro’s effective context window was expanded to support document-scale reasoning and long-horizon agent workflows.",
+  "whyItMatters": "This significantly improves research, analysis, and agent planning tasks by allowing the model to reason over much larger bodies of information in a single session.",
+  "affectedObjects": ["gemini-3-pro"],
+  "impactLevel": "High"
+}

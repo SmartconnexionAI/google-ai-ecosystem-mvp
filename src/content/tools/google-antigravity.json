@@ -1,0 +1,21 @@
+{
+  "id": "google-antigravity",
+  "name": "Google Antigravity",
+  "type": "tool",
+  "layer": "Orchestration",
+  "status": "Public Preview",
+  "accessTier": ["Free", "Pro"],
+  "summary": "Google Antigravity is an agent-first integrated development environment designed to orchestrate multiple autonomous coding agents across complex software projects.",
+  "whyItMatters": "Antigravity marks Google’s shift from single-developer workflows to multi-agent software orchestration. Developers move from writing code line-by-line to supervising autonomous agents that plan, execute, and verify work.",
+  "toolType": "Agent-first IDE",
+  "agenticLevel": "High",
+  "poweredBy": ["gemini-3-pro", "gemini-3-flash"],
+  "targetUser": ["Developers", "Engineering Teams"],
+  "approvalRequired": "Yes",
+  "outputType": ["Code", "Artifacts"],
+  "relationships": {
+    "relatedModels": ["gemini-3-pro"],
+    "relatedTools": ["jules", "vertex-ai"]
+  },
+  "lastUpdated": "2025-11-18"
+}

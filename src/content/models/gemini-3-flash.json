@@ -1,0 +1,32 @@
+{
+  "id": "gemini-3-flash",
+  "name": "Gemini 3 Flash",
+  "type": "model",
+  "layer": "Foundation",
+  "status": "Active",
+  "accessTier": ["Free", "Pro", "Ultra", "Enterprise"],
+  "summary": "Gemini 3 Flash is Google’s high-speed frontier AI model, optimized for low latency while maintaining strong reasoning and multimodal capabilities.",
+  "whyItMatters": "Gemini 3 Flash solves the trade-off between intelligence and responsiveness. It enables real-time, consumer-scale AI experiences such as search, assistants, and rapid agent workflows without the computational overhead of frontier research models.",
+  "capabilities": [
+    "High-speed reasoning and response generation",
+    "Efficient agentic tool use",
+    "Multimodal understanding for everyday tasks",
+    "Scalable deployment at consumer volumes"
+  ],
+  "reasoningLevel": "High",
+  "contextWindow": "32k–1M tokens",
+  "modalities": ["Text", "Image", "Audio"],
+  "typicalUseCases": [
+    "Conversational AI and assistants",
+    "Search and real-time exploration",
+    "High-frequency agent workflows",
+    "Consumer-facing applications"
+  ],
+  "relationships": {
+    "evolvesFrom": ["gemini-2-5-flash"],
+    "powers": ["gemini-app", "search-ai-mode"],
+    "usedBy": ["vertex-ai", "firebase-studio"],
+    "related": ["gemini-3-pro", "gemini-3-deep-think"]
+  },
+  "lastUpdated": "2025-11-20"
+}

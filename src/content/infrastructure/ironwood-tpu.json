@@ -1,0 +1,16 @@
+{
+  "id": "ironwood-tpu",
+  "name": "Ironwood TPU",
+  "type": "infrastructure",
+  "layer": "Foundation",
+  "status": "Active",
+  "summary": "Ironwood is Google’s seventh-generation Tensor Processing Unit (TPU), purpose-built to accelerate large-scale AI inference workloads.",
+  "whyItMatters": "Ironwood enables Google to run frontier-level AI models at massive scale without prohibitive latency or cost. It is a key reason why Gemini 3 models can deliver deep reasoning and agentic workflows to millions of users simultaneously.",
+  "generation": "7th Generation TPU",
+  "primaryRole": "High-throughput AI inference for large multimodal models",
+  "performanceImpact": "Up to 10× performance improvement for inference workloads compared to previous TPU generations",
+  "relationships": {
+    "powers": ["gemini-3-pro", "gemini-3-flash", "veo-3"]
+  },
+  "lastUpdated": "2025-11-20"
+}

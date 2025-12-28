@@ -1,0 +1,13 @@
+{
+  "id": "free-tier",
+  "name": "Free Tier",
+  "type": "pricing",
+  "status": "Active",
+  "price": "$0 / month",
+  "summary": "The Free Tier provides basic access to Google’s AI capabilities for exploration, learning, and light usage.",
+  "includedModels": ["gemini-3-flash", "gemini-2-5-pro"],
+  "includedTools": ["google-ai-studio", "notebooklm"],
+  "limitsSummary": "Limited daily prompts, smaller context windows, and capped advanced features.",
+  "idealUser": "Curious users, students, and beginners exploring Google AI tools.",
+  "lastUpdated": "2025-11-20"
+}

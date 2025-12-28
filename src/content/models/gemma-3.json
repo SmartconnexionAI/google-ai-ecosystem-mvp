@@ -1,0 +1,32 @@
+{
+  "id": "gemma-3",
+  "name": "Gemma 3",
+  "type": "model",
+  "layer": "Foundation",
+  "status": "Active",
+  "accessTier": ["Open"],
+  "summary": "Gemma 3 is Google’s most capable open-weight AI model, designed for efficient single-node deployment on GPUs and TPUs.",
+  "whyItMatters": "Gemma 3 extends Google’s AI strategy beyond proprietary platforms by enabling local, private, and research-driven deployments. It empowers developers to experiment, fine-tune, and deploy advanced models without cloud dependency.",
+  "capabilities": [
+    "High-performance single-node inference",
+    "Efficient deployment on GPUs and TPUs",
+    "Custom fine-tuning and experimentation",
+    "Open research and local inference support"
+  ],
+  "reasoningLevel": "Medium–High",
+  "contextWindow": "32k tokens",
+  "modalities": ["Text"],
+  "typicalUseCases": [
+    "Local AI deployment",
+    "Research experimentation",
+    "Custom fine-tuning projects",
+    "Privacy-sensitive applications"
+  ],
+  "relationships": {
+    "evolvesFrom": ["gemma-2"],
+    "powers": [],
+    "usedBy": ["research-community"],
+    "related": ["gemini-2-5-pro"]
+  },
+  "lastUpdated": "2025-11-20"
+}

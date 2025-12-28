@@ -1,0 +1,10 @@
+{
+  "id": "update-2025-11-10-nano-banana-pro-controls",
+  "date": "2025-11-10",
+  "changeType": "Capability Expansion",
+  "title": "Nano Banana Pro adds advanced visual consistency controls",
+  "whatChanged": "Nano Banana Pro expanded its reference-image support to improve character and brand consistency across generated visuals.",
+  "whyItMatters": "This makes the tool viable for professional design and marketing workflows where visual consistency is critical.",
+  "affectedObjects": ["nano-banana-pro"],
+  "impactLevel": "Medium"
+}

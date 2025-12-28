@@ -1,0 +1,32 @@
+{
+  "id": "gemini-3-pro",
+  "name": "Gemini 3 Pro",
+  "type": "model",
+  "layer": "Foundation",
+  "status": "Active",
+  "accessTier": ["Pro", "Ultra", "Enterprise"],
+  "summary": "Gemini 3 Pro is Google’s highest-reasoning AI model, designed for research-grade tasks that require deep logical planning, long context understanding, and multimodal intelligence.",
+  "whyItMatters": "Gemini 3 Pro represents Google’s move toward frontier-level, agent-capable intelligence. It enables complex scientific research, advanced software engineering, and long-horizon reasoning workflows that are not practical with lower-latency or consumer-optimized models.",
+  "capabilities": [
+    "Advanced mathematical and logical reasoning",
+    "Long-context understanding for large documents and datasets",
+    "Multimodal input across text, images, and code",
+    "Agentic task planning and verification"
+  ],
+  "reasoningLevel": "Frontier",
+  "contextWindow": "1M–2M tokens",
+  "modalities": ["Text", "Image", "Code"],
+  "typicalUseCases": [
+    "Scientific research and hypothesis generation",
+    "Complex software architecture and refactoring",
+    "Long-form analysis and synthesis",
+    "Enterprise-grade AI agents"
+  ],
+  "relationships": {
+    "evolvesFrom": ["gemini-2-5-pro"],
+    "powers": ["nano-banana-pro", "flow"],
+    "usedBy": ["vertex-ai", "notebooklm"],
+    "related": ["gemini-3-flash", "gemini-3-deep-think"]
+  },
+  "lastUpdated": "2025-11-20"
+}

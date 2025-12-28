@@ -1,0 +1,10 @@
+{
+  "id": "update-2025-11-05-ai-ultra-positioning",
+  "date": "2025-11-05",
+  "changeType": "Access Change",
+  "title": "Google AI Ultra positioned as the top-tier AI offering",
+  "whatChanged": "Google consolidated its most advanced models and tools under the AI Ultra tier with significantly expanded usage limits.",
+  "whyItMatters": "This clarifies Google’s AI monetization strategy and sets clear expectations for professional and enterprise users.",
+  "affectedObjects": ["ai-ultra"],
+  "impactLevel": "Medium"
+}

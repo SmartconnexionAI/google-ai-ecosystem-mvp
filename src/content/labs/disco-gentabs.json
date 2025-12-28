@@ -1,0 +1,17 @@
+{
+  "id": "disco-gentabs",
+  "name": "Disco / GenTabs",
+  "type": "lab",
+  "layer": "Labs",
+  "status": "Experimental",
+  "summary": "Disco and GenTabs are browser-based experiments that transform open tabs into structured, task-specific mini-apps using AI.",
+  "whyItMatters": "These experiments reimagine web browsing as an active, generative process. Instead of managing tabs manually, users can turn information clusters into purpose-built applications.",
+  "domain": "Web Interaction",
+  "interactionModel": ["Tab-to-App Conversion", "Context Synthesis"],
+  "likelyEvolution": "May evolve into a new form of AI-assisted browsing or task management within Chrome or Search.",
+  "relationships": {
+    "relatedTools": ["google-ai-studio"],
+    "relatedModels": ["gemini-3-pro"]
+  },
+  "lastUpdated": "2025-11-14"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "update-2025-11-15-antigravity-preview",
+  "date": "2025-11-15",
+  "changeType": "New Release",
+  "title": "Google Antigravity enters public preview",
+  "whatChanged": "Google released Antigravity, an agent-first development environment for orchestrating autonomous coding agents.",
+  "whyItMatters": "This marks a structural shift in software development, where developers supervise multi-agent workflows instead of writing all code manually.",
+  "affectedObjects": ["google-antigravity"],
+  "impactLevel": "High"
+}

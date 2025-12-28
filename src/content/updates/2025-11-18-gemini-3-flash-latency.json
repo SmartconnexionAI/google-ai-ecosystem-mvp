@@ -1,0 +1,10 @@
+{
+  "id": "update-2025-11-18-gemini-3-flash-latency",
+  "date": "2025-11-18",
+  "changeType": "Capability Expansion",
+  "title": "Gemini 3 Flash optimized for low-latency agent workflows",
+  "whatChanged": "Gemini 3 Flash received performance optimizations focused on responsiveness and high-frequency agent execution.",
+  "whyItMatters": "This reinforces Gemini 3 Flash as the default model for real-time applications such as search, assistants, and consumer-scale agent systems.",
+  "affectedObjects": ["gemini-3-flash"],
+  "impactLevel": "Medium"
+}

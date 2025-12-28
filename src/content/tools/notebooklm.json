@@ -1,0 +1,21 @@
+{
+  "id": "notebooklm",
+  "name": "NotebookLM",
+  "type": "tool",
+  "layer": "Productivity",
+  "status": "Active",
+  "accessTier": ["Free", "Pro", "Ultra"],
+  "summary": "NotebookLM is an AI-powered research and synthesis tool designed to act as a personal knowledge companion.",
+  "whyItMatters": "NotebookLM transforms static documents into interactive knowledge. It supports deep research, synthesis, and learning workflows that go beyond traditional note-taking.",
+  "toolType": "Research Assistant",
+  "agenticLevel": "Medium",
+  "poweredBy": ["gemini-3-pro"],
+  "targetUser": ["Researchers", "Students", "Professionals"],
+  "approvalRequired": "No",
+  "outputType": ["Summaries", "Insights", "Audio Overviews"],
+  "relationships": {
+    "relatedModels": ["gemini-3-pro"],
+    "relatedTools": ["workspace"]
+  },
+  "lastUpdated": "2025-11-20"
+}

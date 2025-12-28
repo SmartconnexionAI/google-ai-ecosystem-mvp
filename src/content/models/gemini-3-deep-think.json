@@ -1,0 +1,32 @@
+{
+  "id": "gemini-3-deep-think",
+  "name": "Gemini 3 Deep Think",
+  "type": "model",
+  "layer": "Foundation",
+  "status": "Active",
+  "accessTier": ["Ultra"],
+  "summary": "Gemini 3 Deep Think is a specialized reasoning model designed for long-horizon planning, advanced logic, and sustained analytical depth.",
+  "whyItMatters": "Deep Think introduces controllable reasoning depth through extended thinking budgets. It enables users to trade speed for accuracy on tasks that require structured planning, proofs, or multi-step reasoning over long contexts.",
+  "capabilities": [
+    "Extended logical reasoning chains",
+    "Long-horizon planning and evaluation",
+    "High-accuracy analytical workflows",
+    "Explicit reasoning depth control"
+  ],
+  "reasoningLevel": "Frontier+",
+  "contextWindow": "192k tokens",
+  "modalities": ["Text", "Code"],
+  "typicalUseCases": [
+    "Complex planning and strategy",
+    "Advanced mathematics and proofs",
+    "Research synthesis with explicit reasoning",
+    "High-stakes decision analysis"
+  ],
+  "relationships": {
+    "evolvesFrom": ["gemini-3-pro"],
+    "powers": ["thinking-mode"],
+    "usedBy": ["gemini-app"],
+    "related": ["gemini-3-pro"]
+  },
+  "lastUpdated": "2025-11-20"
+}

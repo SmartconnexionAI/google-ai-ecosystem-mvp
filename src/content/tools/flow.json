@@ -1,0 +1,21 @@
+{
+  "id": "flow",
+  "name": "Flow",
+  "type": "tool",
+  "layer": "Creation",
+  "status": "Active",
+  "accessTier": ["Ultra"],
+  "summary": "Flow is an AI-powered filmmaking tool that enables cinematic video creation using text, images, and frame-based controls.",
+  "whyItMatters": "Flow extends generative AI into professional video production. It allows creators to prototype, iterate, and produce visual narratives with precise control over style and motion.",
+  "toolType": "Video Creation Suite",
+  "agenticLevel": "Medium",
+  "poweredBy": ["veo-3"],
+  "targetUser": ["Filmmakers", "Creators"],
+  "approvalRequired": "No",
+  "outputType": ["Video"],
+  "relationships": {
+    "relatedModels": ["veo-3"],
+    "relatedTools": ["nano-banana-pro"]
+  },
+  "lastUpdated": "2025-11-15"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "ai-pro",
+  "name": "Google AI Pro",
+  "type": "pricing",
+  "status": "Active",
+  "price": "$19.99 / month",
+  "summary": "Google AI Pro unlocks higher usage limits and access to advanced AI tools for professionals and power users.",
+  "includedModels": ["gemini-3-pro", "gemini-3-flash", "gemini-2-5-pro"],
+  "includedTools": ["notebooklm", "nano-banana-pro", "google-ai-studio"],
+  "limitsSummary": "Higher daily prompt limits, larger context windows, and expanded creative and research features.",
+  "idealUser": "Professionals, creators, and researchers who use AI regularly for work and study.",
+  "lastUpdated": "2025-11-20"
+}

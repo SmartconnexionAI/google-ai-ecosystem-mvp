@@ -1,0 +1,21 @@
+{
+  "id": "cc-gmail",
+  "name": "CC (Gmail Productivity Agent)",
+  "type": "tool",
+  "layer": "Productivity",
+  "status": "Experimental",
+  "accessTier": ["Pro", "Ultra"],
+  "summary": "CC is an experimental productivity agent embedded in Gmail that provides proactive daily briefings and task synthesis.",
+  "whyItMatters": "CC represents Google’s move toward proactive personal AI. Instead of responding to commands, it anticipates user needs by synthesizing information across email, calendar, and documents.",
+  "toolType": "Personal Productivity Agent",
+  "agenticLevel": "Medium",
+  "poweredBy": ["gemini-3-flash"],
+  "targetUser": ["Professionals"],
+  "approvalRequired": "No",
+  "outputType": ["Briefings", "Summaries"],
+  "relationships": {
+    "relatedModels": ["gemini-3-flash"],
+    "relatedTools": ["workspace"]
+  },
+  "lastUpdated": "2025-11-18"
+}

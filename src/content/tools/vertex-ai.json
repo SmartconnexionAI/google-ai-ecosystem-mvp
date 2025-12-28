@@ -1,0 +1,21 @@
+{
+  "id": "vertex-ai",
+  "name": "Vertex AI",
+  "type": "tool",
+  "layer": "Orchestration",
+  "status": "Active",
+  "accessTier": ["Enterprise"],
+  "summary": "Vertex AI is Google Cloud’s enterprise-grade platform for building, deploying, and managing machine learning and generative AI systems at scale.",
+  "whyItMatters": "Vertex AI is the production backbone of Google’s AI ecosystem. It enables organizations to deploy frontier models securely, integrate enterprise data, and operate AI systems with governance, reliability, and compliance.",
+  "toolType": "Enterprise AI Platform",
+  "agenticLevel": "Configurable",
+  "poweredBy": ["gemini-3-pro", "gemini-3-flash", "gemma-3"],
+  "targetUser": ["Enterprises", "ML Teams"],
+  "approvalRequired": "Configurable",
+  "outputType": ["APIs", "Models", "Pipelines"],
+  "relationships": {
+    "relatedModels": ["gemini-3-pro", "gemma-3"],
+    "relatedTools": ["google-antigravity", "jules"]
+  },
+  "lastUpdated": "2025-11-20"
+}

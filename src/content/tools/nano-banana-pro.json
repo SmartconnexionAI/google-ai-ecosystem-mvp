@@ -1,0 +1,21 @@
+{
+  "id": "nano-banana-pro",
+  "name": "Nano Banana Pro",
+  "type": "tool",
+  "layer": "Creation",
+  "status": "Active",
+  "accessTier": ["Pro", "Ultra"],
+  "summary": "Nano Banana Pro is Google’s flagship image generation tool, optimized for high-resolution, brand-consistent visual creation.",
+  "whyItMatters": "Nano Banana Pro bridges the gap between generative AI and professional design. Its ability to maintain visual consistency across references makes it suitable for real-world creative workflows.",
+  "toolType": "Image Generation",
+  "agenticLevel": "Low",
+  "poweredBy": ["gemini-3-pro"],
+  "targetUser": ["Designers", "Creators", "Marketers"],
+  "approvalRequired": "No",
+  "outputType": ["Images"],
+  "relationships": {
+    "relatedModels": ["gemini-3-pro"],
+    "relatedTools": ["flow"]
+  },
+  "lastUpdated": "2025-11-10"
+}

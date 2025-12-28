@@ -1,0 +1,13 @@
+{
+  "id": "ai-ultra",
+  "name": "Google AI Ultra",
+  "type": "pricing",
+  "status": "Active",
+  "price": "Usage-based + Subscription",
+  "summary": "Google AI Ultra provides the highest limits and exclusive access to Google’s most advanced AI tools and models.",
+  "includedModels": ["gemini-3-pro", "gemini-3-deep-think", "veo-3"],
+  "includedTools": ["flow", "nano-banana-pro", "jules", "notebooklm"],
+  "limitsSummary": "Maximum context windows, high monthly usage credits, and access to premium agentic and creative tools.",
+  "idealUser": "Advanced professionals, enterprises, filmmakers, and researchers with high-intensity AI workflows.",
+  "lastUpdated": "2025-11-20"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "learn-your-way",
+  "name": "Learn Your Way",
+  "type": "lab",
+  "layer": "Labs",
+  "status": "Experimental",
+  "summary": "Learn Your Way is an educational experiment that dynamically transforms content into personalized learning experiences.",
+  "whyItMatters": "This experiment explores how generative AI can replace static curricula with adaptive learning paths tailored to individual needs, pacing, and context.",
+  "domain": "Education",
+  "interactionModel": ["Adaptive Content", "Conversational Learning"],
+  "likelyEvolution": "Could become a personalized learning layer across Google’s education and productivity products.",
+  "relationships": {
+    "relatedTools": ["notebooklm"],
+    "relatedModels": ["gemini-3-pro"]
+  },
+  "lastUpdated": "2025-11-12"
+}

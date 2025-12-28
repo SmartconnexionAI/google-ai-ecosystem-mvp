@@ -1,0 +1,17 @@
+{
+  "id": "opal",
+  "name": "Opal",
+  "type": "lab",
+  "layer": "Labs",
+  "status": "Experimental",
+  "summary": "Opal is a no-code AI tool that allows users to create and share multi-step mini-apps using natural language instructions.",
+  "whyItMatters": "Opal lowers the barrier to software creation by turning intent into executable logic. It signals Google’s exploration of AI-native app building where users define behavior instead of writing code.",
+  "domain": "No-Code Development",
+  "interactionModel": ["Natural Language", "Step-Based Logic"],
+  "likelyEvolution": "May evolve into a lightweight app builder integrated with Workspace or Google AI platforms.",
+  "relationships": {
+    "relatedTools": ["google-ai-studio"],
+    "relatedModels": ["gemini-3-pro"]
+  },
+  "lastUpdated": "2025-11-15"
+}

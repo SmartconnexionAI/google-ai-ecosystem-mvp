@@ -1,0 +1,21 @@
+{
+  "id": "jules",
+  "name": "Jules",
+  "type": "tool",
+  "layer": "Orchestration",
+  "status": "Public Beta",
+  "accessTier": ["Free"],
+  "summary": "Jules is an autonomous coding agent that performs repository-wide software maintenance tasks asynchronously.",
+  "whyItMatters": "Jules removes low-leverage developer work such as dependency updates, refactoring, and bug fixes. It allows engineers to focus on architectural and strategic problems instead of repetitive maintenance.",
+  "toolType": "Autonomous Coding Agent",
+  "agenticLevel": "Autonomous",
+  "poweredBy": ["gemini-3-pro"],
+  "targetUser": ["Developers"],
+  "approvalRequired": "Yes",
+  "outputType": ["Code Diffs", "Task Reports"],
+  "relationships": {
+    "relatedModels": ["gemini-3-pro"],
+    "relatedTools": ["google-antigravity", "vertex-ai"]
+  },
+  "lastUpdated": "2025-11-15"
+}

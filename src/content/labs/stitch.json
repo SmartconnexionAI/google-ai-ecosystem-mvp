@@ -1,0 +1,17 @@
+{
+  "id": "stitch",
+  "name": "Stitch",
+  "type": "lab",
+  "layer": "Labs",
+  "status": "Experimental",
+  "summary": "Stitch is an AI-powered design experiment that generates user interface layouts and front-end prototypes from prompts.",
+  "whyItMatters": "Stitch explores how AI can compress the design-to-code pipeline. It points toward a future where interface design, prototyping, and implementation converge into a single AI-assisted workflow.",
+  "domain": "UI Design & Prototyping",
+  "interactionModel": ["Prompt-to-UI", "Visual Canvas"],
+  "likelyEvolution": "Could mature into a professional design-to-code tool or integrate with developer environments.",
+  "relationships": {
+    "relatedTools": ["google-antigravity"],
+    "relatedModels": ["gemini-3-pro"]
+  },
+  "lastUpdated": "2025-11-15"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "whisk",
+  "name": "Whisk",
+  "type": "lab",
+  "layer": "Labs",
+  "status": "Experimental",
+  "summary": "Whisk is an image remixing experiment that allows users to combine subject, scene, and style from existing images through drag-and-drop interaction.",
+  "whyItMatters": "Whisk replaces complex text prompting with visual composition. It demonstrates a new paradigm for creative AI where users communicate intent visually instead of verbally.",
+  "domain": "Creative AI",
+  "interactionModel": ["Image-to-Image", "Visual Remixing"],
+  "likelyEvolution": "May evolve into a mainstream creative tool or be integrated into image generation products.",
+  "relationships": {
+    "relatedTools": ["nano-banana-pro"],
+    "relatedModels": ["gemini-3-pro"]
+  },
+  "lastUpdated": "2025-11-10"
+}
