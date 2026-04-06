@@ -2,7 +2,7 @@
 
 import React, { useMemo, useState } from "react";
 
-// ===== FULL DATASET (COMPLETE — MATCHES YOUR PUBLISHED VERSION) =====
+// ===== FULL DATASET (UNCHANGED) =====
 const tools = [
   { name: "Gemini 2.5 Pro", category: "Foundational Models", description: "Balanced multimodal reasoning", tags: ["model"] },
   { name: "Gemini 3 Deep Think", category: "Foundational Models", description: "Advanced reasoning", tags: ["model"] },
@@ -88,7 +88,6 @@ export default function Page() {
   const [selectedGoal, setSelectedGoal] = useState(null);
   const [selectedTool, setSelectedTool] = useState(null);
 
-  // ✅ NEW (lead capture)
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
@@ -134,46 +133,6 @@ export default function Page() {
           className="w-full mb-6 p-3 rounded-xl bg-slate-800 border border-slate-600"
         />
 
-        <div className="flex flex-wrap gap-2 mb-4">
-          {categories.map(c => (
-            <button key={c} onClick={()=>setFilter(c)}
-              className={`px-4 py-2 rounded-xl border ${filter===c?"bg-cyan-500 text-black":"bg-slate-800"}`}>
-              {c}
-            </button>
-          ))}
-        </div>
-
-        {filter !== "What's Changed" && (
-          <div className="flex flex-wrap gap-2 mb-6">
-            {tags.map(t => (
-              <button key={t} onClick={()=>setTag(t)}
-                className={`px-3 py-1 rounded-full text-sm ${tag===t?"bg-purple-500":"bg-slate-800"}`}>
-                {t}
-              </button>
-            ))}
-          </div>
-        )}
-
-        {filter === "What's Changed" && (
-          <div className="space-y-2 mb-6">
-            {whatsChanged.map((w,i)=>(
-              <div key={i} className="bg-slate-900 border border-slate-700 p-3 rounded">{w}</div>
-            ))}
-          </div>
-        )}
-
-        {filter !== "What's Changed" && (
-          <div className="grid md:grid-cols-2 gap-4">
-            {filteredTools.map(t => (
-              <div key={t.name} onClick={()=>setSelectedTool(t)}
-                className="p-4 rounded-xl bg-slate-900 border border-slate-700 cursor-pointer hover:border-cyan-400">
-                <div className="text-cyan-300 font-semibold">{t.name}</div>
-                <div className="text-sm text-gray-300">{t.description}</div>
-              </div>
-            ))}
-          </div>
-        )}
-
         {/* STACK BUILDER */}
         <div className="mt-10">
           <h2 className="text-3xl font-bold mb-6 text-cyan-400">AI Stack Builder</h2>
@@ -199,18 +158,14 @@ export default function Page() {
                 ))}
               </div>
 
-              {/* ✅ LEAD CAPTURE */}
+              {/* ✅ CONNECTED TO MAILERLITE */}
               <div className="mt-6 p-6 rounded-xl bg-slate-900 border border-slate-700">
                 <div className="text-lg font-semibold text-cyan-400 mb-2">
                   🚀 Get Your AI Stack
                 </div>
 
-                <div className="text-sm text-gray-300 mb-4">
-                  Enter your email to save this stack and receive updates, prompts, and recommended tools.
-                </div>
-
                 {!submitted ? (
-                  <div className="flex flex-col md:flex-row gap-2">
+                  <div className="flex gap-2">
                     <input
                       type="email"
                       placeholder="Enter your email"
@@ -220,9 +175,18 @@ export default function Page() {
                     />
 
                     <button
-                      onClick={()=>{
+                      onClick={async ()=>{
                         if(!email) return;
-                        console.log({ email, goal: selectedGoal, stack: stackTools });
+
+                        await fetch("/api/subscribe", {
+                          method: "POST",
+                          headers: { "Content-Type": "application/json" },
+                          body: JSON.stringify({
+                            email,
+                            goal: selectedGoal
+                          }),
+                        });
+
                         setSubmitted(true);
                       }}
                       className="px-6 py-3 rounded-xl bg-cyan-500 text-black"
@@ -239,26 +203,6 @@ export default function Page() {
             </>
           )}
         </div>
-
-        {/* MODAL */}
-        {selectedTool && (
-          <div className="fixed inset-0 bg-black/70 flex items-center justify-center">
-            <div className="bg-slate-900 p-6 rounded-xl max-w-lg w-full">
-              <h2 className="text-xl text-cyan-400 mb-4">{selectedTool.name}</h2>
-              {(prompts[selectedTool.name]||[]).map((p,i)=> (
-                <div key={i} className="bg-slate-800 p-3 mb-2 rounded">
-                  <div className="text-sm mb-2">{p}</div>
-                  <button onClick={()=>navigator.clipboard.writeText(p)}
-                    className="text-xs bg-purple-500 px-2 py-1 rounded">Copy</button>
-                </div>
-              ))}
-              <button onClick={()=>setSelectedTool(null)}
-                className="mt-4 bg-cyan-500 text-black px-4 py-2 rounded">
-                Close
-              </button>
-            </div>
-          </div>
-        )}
 
       </div>
     </div>
