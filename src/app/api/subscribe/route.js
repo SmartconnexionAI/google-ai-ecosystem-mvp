@@ -10,19 +10,26 @@ export async function POST(req) {
       },
       body: JSON.stringify({
         email,
-        groups: ["183986113243776260"],
-        fields: { goal },
+        groups: [process.env.MAILERLITE_GROUP_ID], // FIXED
+        fields: {
+          goal: goal || "",
+        },
+        status: "active", // IMPORTANT
       }),
     });
 
     const data = await res.json();
 
+    // 🔴 LOG ERROR FOR DEBUGGING
     if (!res.ok) {
+      console.error("MailerLite ERROR:", data);
       return Response.json({ success: false, data }, { status: 400 });
     }
 
     return Response.json({ success: true, data });
+
   } catch (err) {
+    console.error("API ERROR:", err);
     return Response.json({ success: false, error: err.message }, { status: 500 });
   }
 }
