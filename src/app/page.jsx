@@ -156,9 +156,7 @@ export default function Page() {
                 ))}
               </div>
 
-              {/* LEAD (FIXED ONLY THIS SECTION) */}
               <div className="mt-6 p-6 rounded-xl bg-slate-900 border border-slate-700">
-
                 <div className="text-lg font-semibold text-cyan-400 mb-2">
                   🚀 Get Your AI Stack
                 </div>
@@ -185,7 +183,11 @@ export default function Page() {
                       await fetch("/api/subscribe",{
                         method:"POST",
                         headers:{"Content-Type":"application/json"},
-                        body:JSON.stringify({email,goal:selectedGoal})
+                        body:JSON.stringify({
+                          email,
+                          goal: selectedGoal,
+                          stack: stackTools.map(t => t.name).join(", ")
+                        })
                       });
 
                       setSubmitted(true);
@@ -201,7 +203,6 @@ export default function Page() {
                     ✅ Your AI stack has been saved.
                   </div>
                 )}
-
               </div>
             </>
           )}

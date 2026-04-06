@@ -1,11 +1,11 @@
 export async function POST(req) {
   try {
-    const { email, goal } = await req.json();
+    const { email, goal, stack } = await req.json();
 
     const API_KEY = process.env.MAILERLITE_API_KEY;
     const GROUP_ID = process.env.MAILERLITE_GROUP_ID;
 
-    // STEP 1: Create or update subscriber
+    // STEP 1 — Create / update subscriber WITH STACK
     const createRes = await fetch("https://connect.mailerlite.com/api/subscribers", {
       method: "POST",
       headers: {
@@ -16,6 +16,7 @@ export async function POST(req) {
         email,
         fields: {
           goal: goal || "",
+          stack: stack || "",
         },
         status: "active",
       }),
@@ -24,11 +25,11 @@ export async function POST(req) {
     const createData = await createRes.json();
 
     if (!createRes.ok) {
-      console.error("Create subscriber error:", createData);
-      return Response.json({ success: false, step: "create", data: createData }, { status: 400 });
+      console.error("Create error:", createData);
+      return Response.json({ success: false }, { status: 400 });
     }
 
-    // STEP 2: Add subscriber to group (CRITICAL FIX)
+    // STEP 2 — FORCE add to group
     const groupRes = await fetch(
       `https://connect.mailerlite.com/api/subscribers/${encodeURIComponent(email)}/groups/${GROUP_ID}`,
       {
@@ -42,14 +43,14 @@ export async function POST(req) {
     const groupData = await groupRes.json();
 
     if (!groupRes.ok) {
-      console.error("Add to group error:", groupData);
-      return Response.json({ success: false, step: "group", data: groupData }, { status: 400 });
+      console.error("Group error:", groupData);
+      return Response.json({ success: false }, { status: 400 });
     }
 
     return Response.json({ success: true });
 
   } catch (err) {
-    console.error("API ERROR:", err);
-    return Response.json({ success: false, error: err.message }, { status: 500 });
+    console.error(err);
+    return Response.json({ success: false }, { status: 500 });
   }
 }
