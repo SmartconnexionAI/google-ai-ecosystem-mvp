@@ -98,12 +98,10 @@ export default function Page() {
 
         <h1 className="text-3xl font-bold mb-6 text-cyan-400">Google AI Ecosystem</h1>
 
-        {/* SEARCH */}
         <input value={search} onChange={(e)=>setSearch(e.target.value)}
           placeholder="Search tools..."
           className="w-full mb-6 p-3 rounded-xl bg-slate-800 border border-slate-600"/>
 
-        {/* BUTTONS */}
         <div className="flex flex-wrap gap-2 mb-4">
           {categories.map(c=>(
             <button key={c} onClick={()=>setFilter(c)}
@@ -113,7 +111,6 @@ export default function Page() {
           ))}
         </div>
 
-        {/* TAGS */}
         {filter!=="What's Changed" && (
           <div className="flex flex-wrap gap-2 mb-6">
             {tags.map(t=>(
@@ -125,7 +122,6 @@ export default function Page() {
           </div>
         )}
 
-        {/* GRID */}
         {filter!=="What's Changed" && (
           <div className="grid md:grid-cols-2 gap-4">
             {filteredTools.map(t=>(
@@ -137,7 +133,6 @@ export default function Page() {
           </div>
         )}
 
-        {/* STACK BUILDER */}
         <div className="mt-10">
           <h2 className="text-3xl text-cyan-400 mb-6">AI Stack Builder</h2>
 
@@ -161,21 +156,52 @@ export default function Page() {
                 ))}
               </div>
 
-              {/* LEAD */}
-              <div className="mt-6">
-                <input value={email} onChange={(e)=>setEmail(e.target.value)}
-                  className="p-3 bg-slate-800 rounded-xl"/>
+              {/* LEAD (FIXED ONLY THIS SECTION) */}
+              <div className="mt-6 p-6 rounded-xl bg-slate-900 border border-slate-700">
 
-                <button onClick={async()=>{
-                  await fetch("/api/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},
-                  body:JSON.stringify({email,goal:selectedGoal})});
-                  setSubmitted(true);
-                }}
-                className="ml-2 px-4 py-2 bg-cyan-500 text-black rounded">
-                  Submit
-                </button>
+                <div className="text-lg font-semibold text-cyan-400 mb-2">
+                  🚀 Get Your AI Stack
+                </div>
 
-                {submitted && <div>✅ Saved</div>}
+                <div className="text-sm text-gray-300 mb-4">
+                  Enter your email to save this stack and receive:
+                  • Your selected AI tools
+                  • Ready-to-use prompts
+                  • Bonus tools and updates
+                </div>
+
+                <div className="flex flex-col md:flex-row gap-2">
+                  <input
+                    value={email}
+                    onChange={(e)=>setEmail(e.target.value)}
+                    placeholder="Enter your email"
+                    className="flex-1 p-3 bg-slate-800 border border-slate-600 rounded-xl"
+                  />
+
+                  <button
+                    onClick={async()=>{
+                      if(!email) return;
+
+                      await fetch("/api/subscribe",{
+                        method:"POST",
+                        headers:{"Content-Type":"application/json"},
+                        body:JSON.stringify({email,goal:selectedGoal})
+                      });
+
+                      setSubmitted(true);
+                    }}
+                    className="px-6 py-3 bg-cyan-500 text-black rounded-xl"
+                  >
+                    Get My Stack
+                  </button>
+                </div>
+
+                {submitted && (
+                  <div className="text-green-400 mt-3">
+                    ✅ Your AI stack has been saved.
+                  </div>
+                )}
+
               </div>
             </>
           )}
